@@ -481,7 +481,7 @@ nav li:first-child{
         gap: 120px;
     }
     .prototype-container iframe{
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
     }
     .textarea-prototype{
