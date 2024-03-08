@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Jaldi:wght@700&family=Kanit:wght@300;500;700&family=Kodchasan:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="drama.css">
+    <title> Asian Drama/ Movie App Case Study</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar dark">
+            <nav class="dark">
+                <ul class="dark">
+                    <li class="close-icon dark" onclick=hideSidebar()><img src = "drama/close.svg" class="dark"></a></li>
+                    <li class="links dark"><a href="#introduction" class="dark">Intro</a></li>
+                    <li class="links dark"><a href="#wireframe" class="dark">Wireframe</a></li>
+                    <li class="links dark"><a href="#mockup" class="dark">Mockup</a></li>
+                    <li class="links dark"><a href="#prototype" class="dark">Hi-Fi Prototype</a></li>
+                </ul>
+            </nav>
+        </div>
+        <nav>
+            <ul>
+                <li class="logo"><a href="home.html"><img src = "drama/logo.svg"></a></li>
+                <li class="links hideOnMobile"><a href="#introduction">Intro</a></li>
+                <li class="links hideOnMobile"><a href="#wireframe">Wireframe</a></li>
+                <li class="links hideOnMobile"><a href="#mockup">Mockup</a></li>
+                <li class="links hideOnMobile"><a href="#prototype">Hi-Fi prototype</a></li>
+                <li class="menu" onclick=showSidebar()><img src = "drama/menu.svg"></a></li>
+            </ul>
+        </nav>
+        <div class="introduction" id="section1">
+            <div class="intro-img">
+                <img src="drama/m-1.jpg" id="intro-phone">
+                <img src="drama/mt-1.jpg" id="intro-tab">
+            </div>
+            <div class="intro-text">
+                <h1>Movie/ Drama App</h1>
+                <p><span>Tool:</span> Figma</p>
+            </div>
+        </div>
+        <div class="info-1">
+            <div class="info-set">
+                <h3 class="heading">Goal & Target audience</h3>
+                <p>This Drama App allows users to view, download their favorite 
+                    drama and movies of language Korean, Thai, Mandarin, Taiwanese. Users 
+                    can also filter their search results according to their preference of 
+                    the language and genre.</p>
+                
+                <p> This App is designed with the targeted audience who loves watching Korean,
+                    Mandarin, Thai dramas and movies. This App id designed in such a way that it allows
+                     users for easy access through phone or tablet</p>
+            </div>
+            <div class="color-palette">
+                <h3 class="heading">Color Palette</h3>
+                <div class="colors">
+                    <div class="color-set">
+                        <img src="drama/color-1.png">
+                        <p>#172B46</p>
+                    </div>
+                    <div class="color-set">
+                        <img src="drama/color-2.png">
+                        <p>#1C3257</p>
+                    </div>
+                    <div class="color-set">
+                        <img src="drama/color-3.png">
+                        <p>#13F187</p>
+                    </div>
+                    <div class="color-set">
+                        <img src="drama/color-4.png">
+                        <p>#FE5959</p>
+                    </div>
+                    <div class="color-set">
+                        <img src="drama/color-5.png">
+                        <p>#FFF067</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wireframe" id="wireframe">
+            <h3 class="heading">Sample Wireframe</h3>
+            <div class="wireframe-imgs">
+                <img src="drama/w-1.jpg">
+                <img src="drama/w-2.jpg">
+                <img src="drama/w-3.jpg">
+                <img src="drama/w-4.jpg">
+                <img src="drama/w-5.jpg">           
+            </div>
+        </div>
+        <div class="mockups" id="mockup">
+            <h3 class="heading">Sample Mockup</h3>
+            <h4>Phone Mockup</h4>
+            <div class="mockup-img-set">
+                <img src="drama/m-1.jpg" class="phone">
+                <img src="drama/m-2.jpg" class="phone">
+                <img src="drama/m-3.jpg" class="phone">
+                <img src="drama/m-4.jpg" class="phone">
+                <img src="drama/m-5.jpg" class="phone">
+                <img src="drama/m-6.jpg" class="phone">
+                <img src="drama/m-7.jpg" class="phone">
+                <img src="drama/m-8.jpg" class="phone">
+                <img src="drama/m-9.jpg" class="phone">
+                <img src="drama/m-10.jpg" class="phone">
+                <img src="drama/m-11.jpg" class="phone">
+                <img src="drama/m-12.jpg" class="phone">
+            </div>
+            <h4>IPad Mockup</h4>
+            <div class="mockup-img-set">
+                <img src="drama/mt-1.jpg" class="tab">
+                <img src="drama/mt-2.jpg" class="tab">
+                <img src="drama/mt-3.jpg" class="tab">
+                <img src="drama/mt-4.jpg" class="tab">
+                <img src="drama/mt-5.jpg" class="tab">
+                <img src="drama/mt-6.jpg" class="tab">
+            </div>
+        </div>
+        <div class="prototype" id="prototype">
+            <h3 class="heading">HI - Fi Prototype</h3>
+            <div class="prototype-container">
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" 
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FvTwFQOB7td6YZjtIrnBwrA%2FAsianBird%3Fpage-id%3D947%253A1838%26type%3Ddesign%26node-id%3D952-3691%26viewport%3D1008%252C302%252C0.34%26t%3DAGsx5Vau79AXuiQn-1%26scaling%3Dscale-down%26starting-point-node-id%3D952%253A3691%26mode%3Ddesign" allowfullscreen></iframe>
+                <div class="textarea-prototype">
+                    <h3>Sample Prototype</h3>
+                    <h5>Tasks involved :</h5>
+                    <p>1. To access search and easy navigation testing.</p>
+                    <p>2. To view the information about the drama/ movie.</p>
+                    <p>3. To view the information about the artist.</p>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <a href="home.html #section4">Share your comments.</a>
+            <a href="#section1"><img src="drama/back-icon.png"></a>
+        </div>
+    </div>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display='flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display='none'
+        }
+    </script>
+</body>
+</html>
