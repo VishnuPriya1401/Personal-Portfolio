@@ -1,178 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Jaldi:wght@700&family=Kodchasan:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="home.css">
-    <title>Vishnupriya Portfolio Home Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Protfolio retry</title>
+  <link rel="stylesheet" href="home.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Jaldi:wght@700&family=Kodchasan:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="sidebar dark">
-            <nav class="dark">
-                <ul class="dark">
-                    <li class="close-icon dark" onclick=hideSidebar()><img src = "assets/close.svg" class="dark"></a></li>
-                    <li class="links dark"><a href="#section1" class="dark">Home</a></li>
-                    <li class="links dark"><a href="#section2" class="dark">About</a></li>
-                    <li class="links dark"><a href="#section3" class="dark">Portfolio</a></li>
-                    <li class="con-btn dark"><a href="#section4" class="dark">contact</a></li>
-                </ul>
-            </nav>
-        </div>
+  <div class="container">
+    <div class="sidebar">
         <nav>
             <ul>
-                <li class="logo"><a href=""><img src = "assets/logo.svg"></a></li>
-                <li class="links hideOnMobile"><a href="#section1">Home</a></li>
-                <li class="links hideOnMobile"><a href="#section2">About</a></li>
-                <li class="links hideOnMobile"><a href="#section3">Portfolio</a></li>
-                <li class="con-btn hideOnMobile"><a href="#section4">contact</a></li>
-                <li class="menu" onclick=showSidebar()><img src = "assets/menu.svg"></a></li>
+                <li class="close-icon" onclick=hideSidebar()><img src = "assets/close.svg"></a></li>
+                <li><a href="#section1">Home</a></li>
+                <li><a href="#section2">About</a></li>
+                <li><a href="#section3">Portfolio</a></li>
+                <li><a href="#section4">contact</a></li>
             </ul>
         </nav>
-        <div class="intro" id="section1">
-            <div class="intro-text">
-                <h6>Hello, <span>I'm</span></h6>
-                <h2>Vishnu Priya</h2>
-                <h4>UI/UX Designer</h4>
-                <p>A begginner with aspiring interest to learn new skills.</p>
-            </div>
-            <img src="assets/intro-img.svg" alt="">
+    </div>
+    <nav class="top-bar">
+        <a href="" class="logo"><img src = "assets/logo.svg"></a>
+        <ul>
+            <li class="hideOnMobile"><a href="#section1">Home</a></li>
+            <li class="hideOnMobile"><a href="#section2">About</a></li>
+            <li class="hideOnMobile"><a href="#section3">Portfolio</a></li>
+            <li class="hideOnMobile"><a href="#section4">contact</a></li>
+        </ul>
+        <a class="menu" onclick=showSidebar()><img src = "assets/menu.svg"></a>
+    </nav>
+    <div class="introduction" id="section1">
+      <div class="intro-text">
+        <p>Hello, <span>I'm</span></p>
+        <p>Vishnu Priya</p>
+        <p>UI/UX Designer & Frontend Developer</p>
+        <p>A beginner with aspiring interest to learn new skills.</p>
+      </div>
+      <div class="intro-img">
+        <img src="assets/intro-img.svg">
+      </div>
+    </div>
+    <div class="about dark" id="section2">
+      <div class="heading">
+        <div class="heading-bar"></div>
+        <p>About</p>
+        <div class="heading-bar"></div>
+      </div>
+      <div class="self-intro">
+        <div class="profile-pic">
+          <img src="assets/about-img.png">
         </div>
-        <div class="about dark" id="section2">
-            <div class="tag dark">
-                <div class="bar dark"></div>
-                <h3 class="dark">About</h3>
-                <div class="bar dark"></div>
-            </div>
-            <div class="about-info dark">
-                <img src="assets/about-img.png" class="dark">
-                <div class="info-text dark">
-                    <h4 class="dark">Vishnupriya Eakambaram</h4>
-                    <p class="dark">Hi! I’m an ambitious UI/UX Designer, a beginner with lots of interest and excitement
-                     in learning new things. I’m seeking a challenging position in a growing and dynamic 
-                     organization where I can learn new skills to further work towards personal and professional
-                      development  in this field and contribute towards the prosperity of the organization.</p>
-                    <a href="resume.pdf" download="resume.pdf">Resume</a>
-                </div>
-            </div>
-            <div class="about-contact dark">
-                <div class="con-info dark info-1">
-                    <h4 class="dark">Email ID</h4>
-                    <p class="dark">eakpriya14@gmail.com</p>
-                </div>
-                <div class="con-info dark info-2">
-                    <h4 class="dark">Phone</h4>
-                    <p class="dark">83000 59342</p>
-                </div>
-                <div class="con-info dark info-3">
-                    <h4 class="dark">LinkedIn</h4>
-                    <p class="dark"><a href="https://www.linkedin.com/in/vishnupriya-eakambaram-32b349222/" target="_blank" class="dark">Vishnupriya Eakambaram</a></p>
-                </div>
-            </div>
-            <div class="skills dark">
-                <h3 class="dark">Skills</h3>
-                <ul class="dark">
-                    <li class="dark sk-1">Figma</li>
-                    <li class="dark sk-2">Adobe XD</li>
-                    <li class="dark sk-3">HTML</li>
-                    <li class="dark sk-4">CSS</li>
-                    <li class="dark sk-5">Python</li>
-                    <li class="dark sk-6">Microsoft Office</li>
-                </ul>
-            </div>
+        <div class="profile-text">
+          <p>Vishnupriya Eakambaram</p>
+          <p>Hi! I'm an ambitious UI/UX Designer, a beginner with lots of interest and excitement in learning new things. I'm seeking a challenging position in a growing and dynamic organization where I can learn new skills to further work towards personal and professional development  in this field and contribute towards the prosperity of the organization.</p>
+          <a class="resume">Resume</a>
         </div>
-        <div class="project" id="section3">
-            <div id="normal" class="tag">
-                <div class="bar"></div>
-                <h3>Projects</h3>
-                <div class="bar"></div>
-            </div>
-            <div id="set1" class="project-info">
-                <img src="assets/project-1-a.png">
-                <div class="project-text">
-                    <h4>01-</h4>
-                    <a href="restaurant.html">Restaurant App</a>
-                    <p>A Food app to place orders and book table in advance.</p>
-                </div>
-            </div>
-            <div id="set2" class="project-info">
-                <div class="project-text">
-                    <h4>02-</h4>
-                    <a href="drama.html">Drama App</a>
-                    <p>An entertainment app to watch asian dramas and movies from a collection of Korean, Mandarin, Japanese and Thai.</p>
-                </div>
-                <img src="assets/project-2-a.png">
-            </div>
-            <div id="set1" class="project-info"">
-                <img src="assets/project-3.png">
-                <div class="project-text">
-                    <h4>03-</h4>
-                    <a href="birds.html">Birds Info App</a>
-                    <p>An info app to discover information about birds around us.</p>
-                </div>
-            </div>
+      </div>
+      <div class="links">
+        <div class="link-set">
+          <p>Email Id</p>
+          <p>eakpriya14@gmail.com</p>
         </div>
-        <div class="contact dark" id="section4">
-            <div class="tag dark">
-                <div class="bar"></div>
-                <h3 class="dark">Contact</h3>
-                <div class="bar"></div>
-            </div>
-            <div class="contact-area dark">
-                <form class="form dark" action="https://formsubmit.co/eakpriya14@gmail.com" method="POST">
-                    <!-- Honeypot -->
-                    <input type="text" name="_honey" style="display:none;">
-    
-                    <!-- Captcha -->
-                    <input type="hidden" name="_captcha" value="false">
-    
-                    <input type="hidden" name="_next" value="https://vishnupriya1401.github.io/Personal-Portfolio/success.html">
+        <div class="link-set">
+          <p>Phone</p>
+          <p>8300059342</p>
+        </div>
+        <div class="link-set">
+          <p>LinkedIn</p>
+          <a href="">Vishnupriya Eakambaram</a>
+        </div>
+      </div>
+      <div class="skills">
+        <p>Skills</p>
+        <ul>
+          <li>Figma</li>
+          <li>Adobe Xd</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Javascript</li>
+          <li>Microsoft Office</li>
+        </ul>
+      </div>
+    </div>
+    <div class="project" id="section3">
+      <div class="heading">
+        <div class="heading-bar"></div>
+        <p>Project</p>
+        <div class="heading-bar"></div>
+      </div>
+      <div class="project-info set-1">
+        <div class="info-text">
+          <p>01.</p>
+          <a href="restaurant.html">Restaurant App</a>
+          <p>A food app to place orders and book table in advance.</p>
+        </div>
+        <div class="project-thumbnail">
+          <a href="restaurant.html">
+            <img src="assets/project-1-a.png">
+          </a>
+        </div>
+      </div>
+      <div class="project-info set-2">
+        <div class="project-thumbnail">
+          <a href="drama.html">
+            <img src="assets/project-2-a.png">
+          </a>
+        </div>
+        <div class="info-text">
+          <p>02.</p>
+          <a href="drama.html">Asian Drama App</a>
+          <p>An entertainment app to watch asian dramas and movies from a collection of Korean, Mandarin, Japanese and Thai.</p>
+        </div>
+      </div>
+      <div class="project-info set-1">
+        <div class="info-text">
+          <p>03.</p>
+          <a href="birds.html">Birds Info App</a>
+          <p>An info app to discover information about birds around us.</p>
+        </div>
+        <div class="project-thumbnail">
+          <a href="birds.html">
+            <img src="assets/project-3.png">
+          </a>
+        </div>
+      </div>
+      <div class="project-info set-2">
+        <div class="thumbnail-set">
+          <a href="https://vishnupriya1401.github.io/Stopwatch.index.html">
+            <img src="assets/stopwatch-project.png"  style="display: none;">
+          </a>
+          <a href="https://vishnupriya1401.github.io/Timer.index.html">
+            <img src="assets/timer-project.png">
+          </a>
+          <a href="https://vishnupriya1401.github.io/Calculator.index.html">
+            <img src="assets/cal-project.png">
+          </a>
+          <a href="https://vishnupriya1401.github.io/Stopwatch.index.html">
+            <img src="assets/stopwatch-project.png">
+          </a>
+        </div>
+        <div class="info-text js-projects-text">
+          <p>04.</p>
+          <a href="">Javascript mini projects</a>
+          <p>(click image to view project)</p>
+        </div>
+      </div>
+    </div>
+    <div class="contact dark" id="section4">
+      <div class="heading">
+        <div class="heading-bar"></div>
+        <p>Contact</p>
+        <div class="heading-bar"></div>
+      </div>
+      <div class="contact-section">
+        <form class="form" action="https://formsubmit.co/eakpriya14@gmail.com" method="POST">
+          <!-- Honeypot -->
+          <input type="text" name="_honey" style="display:none;">
 
-                    <div class="input-set dark">
-                        <input class="dark" type="text" name="name" required="required">
-                        <label class="placeholder-text dark">Name</label>
-                    </div>
-                    <div class="input-set dark">
-                        <input class="dark" type="text" name="email" required="required">
-                        <label class="placeholder-text dark">Email Id</label>
-                    </div>
-                    <div class="input-set dark">
-                        <input class="dark" type="text" name="subject" required="required">
-                        <label class="placeholder-text dark">Subject</label>
-                    </div>
-                    <div class="input-set dark">
-                        <textarea class="dark" name="message" required="required"></textarea>
-                        <label class="placeholder-text dark">Your Message</label>
-                    </div>
-                    <button type="submit">Send Message</button>
-                </form>
-                <div class="contact-text dark">
-                    <h2 class="dark">Let's Connect</h2>
-                    <p class="dark">I'm eagerly waiting to work on user friendly projects.</p>
-                </div>
-            </div>
-            <div class="contact-links dark">
-                <ul class="dark">
-                    <li class="dark"><img src="assets/gmail-icon.png" id="icon" class="dark"> eakpriya14@gmail.com</li>
-                    <li class="dark"><img src="assets/phone-icon.png" id="icon" class="dark"> 83000 59342</li>
-                    <li class="dark"><a href="https://www.linkedin.com/in/vishnupriya-eakambaram-32b349222/" target="_blank" class="dark"><img src="assets/linkedin-icon.png" id="icon" class="dark"> Vishnupriya Eakambaram</a></li>
-                </ul>
-            </div>
+          <!-- Captcha -->
+          <input type="hidden" name="_captcha" value="false">  
+          <input type="hidden" name="_next" value="https://vishnupriya1401.github.io/Personal-Portfolio/success.html">
+
+          <!-- Input - Section -->
+          <div class="input-set">
+          <input type="text" name="name" required="required" >
+          <label>Name</label>
+          </div>
+          <div class="input-set">
+            <input type="text" name="email" required="required" >
+            <label>Email Id</label>
+          </div>
+          <div class="input-set">
+            <input type="text" name="subject" required="required" >
+            <label>Subject</label>
+          </div>
+          <div class="input-set">
+            <input type="text" name="message" required="required" >
+            <label>Your Message</label>
+          </div>
+
+          <button type="submit">Send Message</button>
+        </form>
+        <div class="contact-text">
+          <p>Let's Connect</p>
+          <p>I'm eargerly waiting to work on user friendly projects.</p>
         </div>
-    </div> 
-    
-    <script>
-        function showSidebar(){
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display='flex'
-        }
-        function hideSidebar(){
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display='none'
-        }
-    </script> 
+      </div>
+      <div class="contact-links">
+        <div class="link">
+          <img src="assets/gmail-icon.png">
+          <p>eakpriya14@gmail.com</p>
+        </div>
+        <div class="link">
+          <img src="assets/phone-icon.png">
+          <p>8300059342</p>
+        </div>
+        <div class="link">
+          <img src="assets/linkedin-icon.png">
+          <a>Vishnupriya Eakambaram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display='flex'
+    }
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display='none'
+    }
+  </script>
 </body>
 </html>
